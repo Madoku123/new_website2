@@ -1,30 +1,38 @@
 const intiSlider = () => {
     const imageList = document.querySelector(".slider-wrapper .image-list");
-
-    const sliderScrollbar = document.querySelectorAll(".container .slider-scrollbar");
-    const scrollbarThumb = document.querySelectorAll(".scrollbar-thumb");
+    const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+    const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+    const scrollbarThumb = document.querySelector(".scrollbar-thumb");
     const maxScrollleft = imageList.scrollWidth - imageList.clientWidth;
 
     scrollbarThumb.addEventListener("mousedown", (e) => {
         const startX = e.clientX;
         const thumbPosition = scrollbarThumb.offsetLeft;
-        const handleMouseMove = () => {
+        const handleMouseMove = (e) => {
             const deltaX = e.clientX - startX;
             const newThumbPosition = thumbPosition + deltaX;
-            const maxThumbposition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+            
+            const boundedPosition = Math.max(0, Math.min(maxThumbposition, newThumbPosition));
 
+            const scrollPosition = (boundedPosition / maxThumbposition) * maxScrollleft;
+
+
+            scrollbarThumb.style.left = '${newThumbPosition}px';
+
+        }
+        const handleMouseUp = () => {
+            document.removeListener("mousemove", handleMouseMove);
+            document.removeListener("mouseup", handleMouseUp);
+        }
             const boundedPosition = Math.max(0, Math.min(maxThumbposition, newThumbPosition));
 
             const scrollPosition = (boundedPosition / maxThumbposition) * maxScrollleft;
 
             imageList.scrollLeft = scrollPosition;
             scrollbarThumb.style.left = `${newThumbPosition}px`;
-        }
+        
 
-        const handleMouseUp = () => {
-            document.removeListener("mousemove", handleMouseMove);
-            document.removeListener("mouseup", handleMouseUp);
-        }
+        
 
         document.addEventListener("mousemove", handleMouseMove);
         document.addEventListener("mouseup", handleMouseUp);
