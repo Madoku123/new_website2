@@ -11,21 +11,52 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
     <!--naachni swiper iin link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+       <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/naw_navbar/search/search.html" />
 
 
     <link rel="stylesheet" href="turshilt_style.css">
+    <link rel="stylesheet" href="search.css">
 </head>
 
 <body>
+   
+
+    
     <div class="container swiper">
+      <div class="container">
+
+        <header>
+            <h1><i class="fas fa-utensils"></i> LabX</h1>
+            <p>Find delicious recipes from around the world</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for meals or keywords" />
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div id="error-container" class="hidden">
+            <p>No meals found. Try another search term!</p>
+        </div>
+
+        <div id="result-heading"></div>
+        <div id="meals" class="meals-container"></div>
+
+      </div> 
         <div class="card-wrapper">
             <ul class="card-list swiper-wrapper">
                 <li class="card-item swiper-slide">
-                    <a href="#" class="card-link">
-                        <img src="img/photooo.jpg" alt="Card Image"
+                    <a href="day1.html" class="card-link">
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
-                        <p class="badge">Туршилт 1</p>
-                        <h2 class="card-title">Day 1</h2>
+                        <p class="badge">ᠬᠥᠳᠡᠯᠳᠡᠭ ᠪᠡᠬᠡ</p>
+                        <h2 class="card-title">ᠡᠳᠦᠷ 1</h2>
                         <button class="card-button material-symbols-outlined">
                             arrow_forward
                         </button>
@@ -33,10 +64,10 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
-                        <p class="badge">Туршилт 2</p>
-                        <h2 class="card-title">Day 2</h2>
+                        <p class="badge">LabX</p>
+                        <h2 class="card-title">ᠡᠳᠦᠷ 2</h2>
                         <button class="card-button material-symbols-outlined">
                             arrow_forward
                         </button>
@@ -44,10 +75,10 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
-                        <p class="badge">Туршилт 3</p>
-                        <h2 class="card-title">Day 3</h2>
+                        <p class="badge">LabX</p>
+                        <h2 class="card-title">ᠡᠳᠦᠷ 3</h2>
                         <button class="card-button material-symbols-outlined">
                             arrow_forward
                         </button>
@@ -55,10 +86,10 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 4</p>
-                        <h2 class="card-title">Day 4</h2>
+                        <h2 class="card-title">ᠡᠳᠦᠷ 4</h2>
                         <button class="card-button material-symbols-outlined">
                             arrow_forward
                         </button>
@@ -66,10 +97,10 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
-                        <h2 class="card-title">Day 5</h2>
+                        <h2 class="card-title">ᠡᠳᠦᠷ 5</h2>
                         <button class="card-button material-symbols-outlined">
                             arrow_forward
                         </button>
@@ -77,10 +108,10 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
-                        <h2 class="card-title">Day 6</h2>
+                        <h2 class="card-title">ᠡᠳᠦᠷ 6</h2>
                         <button class="card-button material-symbols-outlined">
                             arrow_forward
                         </button>
@@ -88,10 +119,10 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
-                        <h2 class="card-title">Day 7</h2>
+                        <h2 class="card-title">ᠡᠳᠦᠷ 7</h2>
                         <button class="card-button material-symbols-outlined">
                             arrow_forward
                         </button>
@@ -99,10 +130,10 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
-                        <h2 class="card-title">Day 8</h2>
+                        <h2 class="card-title">ᠡᠳᠦᠷ 8</h2>
                         <button class="card-button material-symbols-outlined">
                             arrow_forward
                         </button>
@@ -110,7 +141,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 9</h2>
@@ -121,7 +152,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 10</h2>
@@ -132,7 +163,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 11</h2>
@@ -143,7 +174,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 12</h2>
@@ -154,7 +185,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 13</h2>
@@ -165,7 +196,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 14</h2>
@@ -176,7 +207,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 15</h2>
@@ -187,7 +218,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 16</h2>
@@ -198,7 +229,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 17</h2>
@@ -209,7 +240,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 18</h2>
@@ -220,7 +251,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 19</h2>
@@ -231,7 +262,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 20</h2>
@@ -242,7 +273,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 21</h2>
@@ -253,7 +284,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 22</h2>
@@ -264,7 +295,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 23</h2>
@@ -275,7 +306,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 24</h2>
@@ -286,7 +317,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 25</h2>
@@ -297,7 +328,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 26</h2>
@@ -308,7 +339,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 27</h2>
@@ -319,7 +350,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 28</h2>
@@ -330,7 +361,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 29</h2>
@@ -341,7 +372,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 30</h2>
@@ -352,7 +383,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 31</h2>
@@ -363,7 +394,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 32</h2>
@@ -374,7 +405,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 33</h2>
@@ -385,7 +416,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 34</h2>
@@ -396,7 +427,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 35</h2>
@@ -407,7 +438,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 36</h2>
@@ -418,7 +449,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 37</h2>
@@ -429,7 +460,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 38</h2>
@@ -440,7 +471,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 39</h2>
@@ -451,7 +482,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 40</h2>
@@ -462,7 +493,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 41</h2>
@@ -473,7 +504,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 42</h2>
@@ -484,7 +515,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 43</h2>
@@ -495,7 +526,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 44</h2>
@@ -506,7 +537,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 45</h2>
@@ -517,7 +548,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 46</h2>
@@ -528,7 +559,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 47</h2>
@@ -539,7 +570,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 48</h2>
@@ -550,7 +581,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 49</h2>
@@ -561,7 +592,7 @@
                 </li>
                 <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
-                        <img src="c:\Users\Bat-Orgil\OneDrive\Pictures\IMG_3481.jpeg" alt="Card Image"
+                        <img src="img/1.png" alt="Card Image"
                             class="card-image">
                         <p class="badge">Туршилт 5</p>
                         <h2 class="card-title">Day 50</h2>
@@ -582,6 +613,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="turshilt_script.js"></script>
+    <script src="/naw_navbar/search/search.js"></script>
 </body>
 
 </html>
