@@ -35,10 +35,32 @@
     color: #222;
 }
 
-.menu-category p{
-    font-size: 0.95rem;
-    color: #555;
+.menu-category ion-icon{
+    font-size: 2.5rem;   /* ICON-ийн хэмжээг хүссэнээрээ солино */
+    color: var(--primary-color); /* Хүсвэл өнгө */
+    margin-bottom: 20px;
 }
+
+
+.link1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+.menu-category p{
+     writing-mode: vertical-rl;   /* Босоо болгоно */
+    
+    font-size: 2rem;             /* Томруулна */
+    line-height: 2.2rem;         /* Босоо мөр хоорондын зай */
+    
+    margin: 0 auto;    
+}
+
+
 
 @media (max-width: 576px) {
     .menu-categories{
