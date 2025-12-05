@@ -4,7 +4,12 @@
     align-items: stretch;
     gap: 30px;                 /* Хайрцагнуудын хооронд зай */
     margin-top: 50px;
-    flex-wrap: nowrap;         /* Мөр солихгүй */
+    flex-wrap: nowrap;
+
+    width: 100%;                 /* Контейнер бүх дэлгэцийг эзэлнэ */
+    max-width: 1400px;           /* Дунд хэмжээг тогтоож төвд барина */
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .menu-category{
